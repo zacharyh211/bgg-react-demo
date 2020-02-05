@@ -1,11 +1,171 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body,html,#root {
+  height: 100%;
+}
+
+img {
+  padding: 10px;
+}
+
+p {
+  width: 100%;
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+.BoardgameSearch {
+  max-height: 100vh;
+  min-height: 100vh;
+  font-family: 'Lato', sans-serif;
+  color: #282D62;
+  height: 100vh;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
   pointer-events: none;
+}
+
+.search-panel {
+  background-color: #A2A18D;
+  min-height: 40px;
+  height: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 15px;
+}
+
+.search-panel > * {
+  margin: 2px;
+}
+
+.lower-panel {
+  display: flex;
+  height: 95%;
+}
+
+.filter-panel {
+  flex-basis: 25%;
+  flex-grow: 1;
+  background-color: #C7C6D1;
+  padding: 10px;
+  min-width: 250px;
+  top: 0;
+  left: 0;
+  position: relative;
+}
+
+.display-panel {
+  flex-basis: 75%;
+  flex-grow: 2;
+  display: block;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.toolbar {
+  background-color: #E84771;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.toolbar > * {
+  margin: 5px;
+}
+
+.ToolbarSelector {
+}
+
+.ShowMoreButton {
+  text-decoration: underline;
+}
+
+.display-view {
+  background-color: #F0F1E7;
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.GameViewer {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, 250px);
+}
+
+.GameEntry {
+  height: 300px;
+  padding: 5px;
+  font-size: large;
+  text-align: center;
+}
+
+.GameEntry img {
+  margin: 0 auto;
+  max-width: 80%;
+  max-height: 80%;
+  display: block;
+
+}
+
+.GameEntryDetailPanelMain {
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+.ActionBar {
+  background-color: #A1A0AB;
+  min-width:50px;
+
+}
+
+.GameEntry div {
+  bottom: 0;
+}
+
+.GameDescription {
+  width: calc(100% - 50px);
+  margin: 25px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.viewer-container {
+  height: calc(100% - 50px);
+  overflow-x: hidden;
+}
+
+.GameEntryDetailPanel {
+  position: absolute;
+  box-sizing: border-box;
+  background-color: #C7C6D1;
+  display: flex;
+  right: -100%;
+  top: calc(5% + 50px);
+  height: calc(95% - 50px);
+  transition: right .5s;
+  scroll-behavior: hidden;
+  min-width: 30%;
+  max-width: 50%;
+}
+
+.GameEntryDetailPanel.is-open {
+  right: 0;
+}
+
+.GameCreatorInfo {
+
+}
+
+.SearchLink {
+  text-decoration: underline;
 }
 
 .App-header {
@@ -19,9 +179,44 @@
   color: white;
 }
 
+.filter_headers {
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.range_input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  white-space: nowrap;
+  padding: 5px;
+}
+
+.range_input span {
+  display: flex;
+  flex-grow: 1;
+}
+
+.range_input input {
+  flex: 3;
+  width: 60px;
+  max-width: 100px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.range_input label {
+  flex: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 .App-link {
   color: #61dafb;
 }
+
 
 @keyframes App-logo-spin {
   from {

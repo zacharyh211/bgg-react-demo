@@ -2,12 +2,24 @@
   "name": "bgg-viewer",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://zacharyh211.github.io/bgg-react-demo",
   "dependencies": {
+    "axiom": "^0.1.6",
+    "axios": "^0.19.0",
+    "gh-pages": "^2.2.0",
+    "qs": "^6.8.0",
     "react": "^16.8.6",
+    "react-debounce-input": "^3.2.2",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-onclickoutside": "^6.9.0",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.0.1",
+    "react-select": "^3.0.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

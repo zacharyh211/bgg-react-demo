@@ -282,20 +282,21 @@ function Toolbar(props) {
 function PaginationButton(props) {
   return (
     <li onClick = {()=>props.onClick && props.onClick(props.num)} key = {props.num} style = {{
-      float: 'left',
-      padding: '5px',
+      padding: '4px',
       'textDecoration' : props.selected === props.num ? 'underline' : 'none',
       'backgroundColor': '#C7C6D1',
       margin: '5px',
       borderRadius: '4px',
+      display: 'inline-block',
     }}>
-      {props.num}
+      <div>
+        {props.num}
+      </div>
     </li>
   )
 }
 
 let paginationBarStyle = {
-  display: 'flex',
   justifyContents: 'center',
   listStyleType:'none',
   position: 'relative',

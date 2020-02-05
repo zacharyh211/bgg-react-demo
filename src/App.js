@@ -29,7 +29,7 @@ class BoardgameSearch extends React.Component {
     this.state = {
       current_data: [],
       source: 'boardgames',
-      db_url: 'http://127.0.0.1:8000/bgdb/search/',
+      db_url: 'https://bgdbbackend.herokuapp.com/bgdb/search/',
       exclusive_search_pref: ['designer','artist','publisher','boardgame'],
       show_details:false,
       selected_data:Object(),

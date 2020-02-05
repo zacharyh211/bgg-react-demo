@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/bgg-react-demo/static/css/main.b30ea732.chunk.css",
-    "main.js": "/bgg-react-demo/static/js/main.b386ea24.chunk.js",
-    "main.js.map": "/bgg-react-demo/static/js/main.b386ea24.chunk.js.map",
+    "main.js": "/bgg-react-demo/static/js/main.362fe552.chunk.js",
+    "main.js.map": "/bgg-react-demo/static/js/main.362fe552.chunk.js.map",
     "runtime~main.js": "/bgg-react-demo/static/js/runtime~main.69934693.js",
     "runtime~main.js.map": "/bgg-react-demo/static/js/runtime~main.69934693.js.map",
     "static/js/2.bb8df008.chunk.js": "/bgg-react-demo/static/js/2.bb8df008.chunk.js",
     "static/js/2.bb8df008.chunk.js.map": "/bgg-react-demo/static/js/2.bb8df008.chunk.js.map",
     "index.html": "/bgg-react-demo/index.html",
-    "precache-manifest.35f355993a362374a5b58e60c73ff1a0.js": "/bgg-react-demo/precache-manifest.35f355993a362374a5b58e60c73ff1a0.js",
+    "precache-manifest.0287a692e0f9072b13acdb8cf80f9118.js": "/bgg-react-demo/precache-manifest.0287a692e0f9072b13acdb8cf80f9118.js",
     "service-worker.js": "/bgg-react-demo/service-worker.js",
     "static/css/main.b30ea732.chunk.css.map": "/bgg-react-demo/static/css/main.b30ea732.chunk.css.map"
   }

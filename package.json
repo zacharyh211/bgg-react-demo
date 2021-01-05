@@ -5,7 +5,7 @@
   "homepage": "https://zacharyh211.github.io/bgg-react-demo",
   "dependencies": {
     "axiom": "^0.1.6",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "gh-pages": "^2.2.0",
     "qs": "^6.8.0",
     "react": "^16.8.6",
